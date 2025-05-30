@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"mission2\startup_stm32f103x6.o"
+"mission2\main.o"
+"mission2\gpio.o"
+"mission2\dma.o"
+"mission2\usart.o"
+"mission2\stm32f1xx_it.o"
+"mission2\stm32f1xx_hal_msp.o"
+"mission2\stm32f1xx_hal_gpio_ex.o"
+"mission2\stm32f1xx_hal_uart.o"
+"mission2\stm32f1xx_hal.o"
+"mission2\stm32f1xx_hal_rcc.o"
+"mission2\stm32f1xx_hal_rcc_ex.o"
+"mission2\stm32f1xx_hal_gpio.o"
+"mission2\stm32f1xx_hal_dma.o"
+"mission2\stm32f1xx_hal_cortex.o"
+"mission2\stm32f1xx_hal_pwr.o"
+"mission2\stm32f1xx_hal_flash.o"
+"mission2\stm32f1xx_hal_flash_ex.o"
+"mission2\stm32f1xx_hal_exti.o"
+"mission2\system_stm32f1xx.o"
+"mission2\bsp_usart.o"
+--strict --scatter "mission2\mission2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "mission2.map" -o mission2\mission2.axf

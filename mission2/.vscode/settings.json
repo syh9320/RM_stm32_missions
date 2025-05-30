@@ -1,0 +1,7 @@
+{
+  "C_Cpp.errorSquiggles": "enabled",
+  "files.associations": {
+    "*.dbclient-js": "javascript",
+    "bsp_usart.h": "c"
+  }
+}
